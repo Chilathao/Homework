@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Submitsize</title>
+    <style>
+        h2 {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+
+            height: 100vh;
+            width: 100%;
+            background-color: rgb(25, 150, 112);
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form.container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2 {
+            margin: 5px;
+            color: #fff;
+            font-weight: 300;
+        }
+
+        input {
+            border: none;
+            height: 50px;
+            width: 250px;
+            margin: 10px 0;
+            padding: 0 10px;
+            font-size: 1rem;
+            outline: none;
+            text-align: center;
+            border-radius: 5px;
+            transition: .5s;
+            cursor: pointer;
+        }
+
+        .textbox {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        .textbox ::placeholder {
+            color: #fff;
+        }
+
+        .textbox:hover,
+        .textbox:focus {
+            background: rgb(26, 167, 108);
+            width: 270px;
+            color: rgb(8, 4, 4);
+        }
+
+        .btn-submit {
+            background: #fff;
+            color: #1abc9c;
+        }
+
+        .btn-submit:hover {
+            color: rgb(161, 161, 161);
+            background: #00d1a7;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <form class="container">
+            <h2>
+               <b>
+                <i>
+                    Log in
+                </i>
+               </b>
+            </h2>
+        <input class="textbox" type="text" placeholder="Gmail or Username">
+        <input class="textbox" type="password" placeholder="password">
+        <input class="btn-submit" type="submit" value="login">
+    </form>
+</body>
+
+</html>
